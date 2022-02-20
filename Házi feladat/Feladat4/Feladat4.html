@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feladat4</title>
+</head>
+<body>
+    <form name="bor" method="POST">
+        <h2>Írja be adatait!</h2>
+        <label for="email">E-mail cím: </label>
+        <input id="email" type="email" placeholder="E-mail cím" name="email">
+        <br>
+        <label for="nev">Név: </label>
+        <input id="nev" type="text" placeholder="Név" name="nev">
+        <br>
+        <h2>Milyen bort szeret?</h2>
+        <input type="radio" name="szin" id="voros" value="voros">
+        <label for="voros">Vörös</label>
+        <br>
+        <input type="radio" name="szin" id="feher" value="feher">
+        <label for="feher">Fehér</label>        
+        <br>
+        <h2>Milyen alkoholtartalmú bor tetszik Önnek?</h2>
+        <br>
+        <input type="radio" name="alkohol" id="10" value="10">
+        <label for="10">~10%</label>
+        <br>
+        <input type="radio" name="alkohol" id="15" value="15">
+        <label for="15">~15%</label>
+        <br>
+        <br>
+        <label for="fajta">Borfajták: </label>        
+        <select name="fajta" id="fajta">
+            <option value="1">Cabernet franc</option>
+            <option value="2">Cabernet sauvignon</option>
+            <option value="3">Sauvignon blanc</option>
+            <option value="4">Cserszegi fűszeres</option>
+            <option value="5">Kékfrankos</option>
+        </select>
+        <br>
+        <h2>Milyen cukortartalmat szeret a borban?</h2>
+        <br>
+        <input type="checkbox" name="cukor[]" id="szaraz" value="szaraz">
+        <label for="szaraz"> Száraz:  < 4g/l</label>
+        <input type="checkbox" name="cukor[]" id="felszaraz" value="felszaraz">
+        <label for="felszaraz">Félszáraz: 4-12g/l</label>
+        <input type="checkbox" name="cukor[]" id="feledes" value="feledes">
+        <label for="feledes">Félédes: 12-45g/l</label>
+        <input type="checkbox" name="cukor[]" id="edes" value="edes">
+        <label for="edes">Édes: > 45g/l</label>
+        <br>
+        <br>
+        <button id="bor_gomb" type="button">Bevitel</button>
+    </form>
+<script src="Feladat4.js"></script>
+
+</body>
+</html>

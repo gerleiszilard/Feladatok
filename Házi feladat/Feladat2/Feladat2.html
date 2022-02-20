@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feladat2</title>
+</head>
+<body>
+    <form name="pizzarendeles" method="POST">
+    <h1>Megrendelő adatai: </h1>
+    <br>
+    <label for="nev">Teljes név: </label>
+    <input id="nev" type="text" placeholder="Név..." name="nev">
+    <br>
+    <label for="telefonszam">Telefonszám: </label>
+    <input id="telefonszam" type="text" placeholder="Telefonszám..." name="telefonszam">
+    <br>
+    <label for="hely">Irányítószám, város, utca és házszám: </label>
+    <input id="hely" type="text" placeholder="Hely..." name="hely">
+    <br>
+    <h1>Pizza adatai: </h1>
+    <br>
+    <label for="pizzaalap">Pizzaalap: </label>
+    <select name="pizzaalap" id="pizzaalap">
+    <option value="1">(Nincs kiválasztva)</option>
+    <option value="2">Tejfölös alap</option>
+    <option value="3">Paradicsomos alap</option>
+    </select>
+    <br>
+    Pizza feltéte:
+    <input type="checkbox" name="pizzafeltet[]" id="sonka" value="sonka">
+    <label for="sonka">Sonka</label>
+    <input type="checkbox" name="pizzafeltet[]" id="kukorica" value="kukorica">
+    <label for="kukorica">Kukorica</label>
+    <input type="checkbox" name="pizzafeltet[]" id="bacon" value="bacon">
+    <label for="bacon">Bacon</label>
+    <input type="checkbox" name="pizzafeltet[]" id="tojas" value="tojas">
+    <label for="tojas">Tojás</label>
+    <input type="checkbox" name="pizzafeltet[]" id="extra_sajt" value="extra_sajt">
+    <label for="extra_sajt">Extra sajt</label>
+    <br>
+    <br>
+    <h3>Egyéb: </h3>
+    <label for="megjegyzes">Megjegyzés: </label>
+    <input id="megjegyzes" type="text" placeholder="Megjegyzés..." name="megjegyzes">
+    <br>
+    <br>
+    <button  id="felvetel_gomb" type="button">Felvétel</button>
+    </form>
+    <script src="Feladat2.js"></script>
+</body>
+</html>
